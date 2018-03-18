@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "env",
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+    "react-hot-loader/babel"
+  ],
+  "env": {
+    "test": {
+      "plugins":
+      [
+        "babel-plugin-rewire"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types"
+      ]
+    }
+  }
+}
